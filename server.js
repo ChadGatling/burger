@@ -7,7 +7,7 @@ var path = require('path');
 var burgersController = require('./controllers/burgers_controller.js')
 var burger = require("./models/burger.js");
 
-var PORT = 3000;
+var PORT = process.env.PORT || 3000;
 var app = express();
 
 app.use(bodyparser.urlencoded({extended: false}));
